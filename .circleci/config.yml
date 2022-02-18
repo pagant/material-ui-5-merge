@@ -4,11 +4,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:10.15-stretch-browsers
-<<<<<<< HEAD
     working_directory: ~/github/workflows/
-=======
-    working_directory: ~./
->>>>>>> 8be373b4de2f21225cd8333ce16afb43a42a79e9
     steps:
       - checkout
       - run:

@@ -44,15 +44,28 @@ const deltaTheme = {
     shape: {
       borderRadius: 6,
     },
-    props: {
+
+    components: {
       MuiTooltip: {
-        arrow: true,
+          arrow: true,
       },
       MuiAppBar: {
-        color: 'transparent',
+        defaultProps: {
+          color: 'inherit',
+        }
       },
+      MuiIcon: {
+        defaultProps: {
+          // Replace the `material-icons` default value.
+          baseClassName: 'material-icons-outlined',
+        },
+      },
+      MuiButton: {
+         root: {
+           textTransform: 'capitalize',
+         }
+      }
     },
- 
 
 };
 

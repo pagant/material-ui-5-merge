@@ -11,6 +11,7 @@ function Button(props) {
   const { uxpinRef, ...other } = props;
   return (
     <ButtonM
+      style={{textTransform: 'capitalize'}}
       {...other}
       ref={uxpinRef}
       startIcon={props.startIcon && <Icon>{props.startIcon}</Icon>}

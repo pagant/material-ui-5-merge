@@ -4,7 +4,7 @@ import IconM from '@mui/material/Icon';
 import { iconVariants } from './icon-variants'
 
 let icons = document.createElement('link');
-icons.setAttribute('href', 'https://fonts.googleapis.com/icon?family=Material+Icons');
+icons.setAttribute('href', 'https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
 icons.setAttribute('rel', 'stylesheet');
 document.head.appendChild(icons);
 
@@ -16,6 +16,7 @@ function Icon (props) {
 }
 
 Icon.propTypes = {
+
   /**
    * The icon to display.
    * Use the name of the icon from https://material.io/tools/icons.

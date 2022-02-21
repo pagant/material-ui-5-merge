@@ -47,7 +47,9 @@ const deltaTheme = {
 
     components: {
       MuiTooltip: {
+        defaultProps: {
           arrow: true,
+        }
       },
       MuiAppBar: {
         defaultProps: {
@@ -60,11 +62,6 @@ const deltaTheme = {
           baseClassName: 'material-icons-outlined',
         },
       },
-      MuiButton: {
-         root: {
-           textTransform: 'capitalize',
-         }
-      }
     },
 
 };

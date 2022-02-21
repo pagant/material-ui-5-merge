@@ -3,7 +3,7 @@ import PropTypes, { func } from 'prop-types';
 import SelectM from '@mui/material/Select';
 // Replaced package imports below with local component
 import FormControl from '@mui/material/FormControl';
-import InputLabel from "@mui/material/InputLabel";
+import InputLabel from '@mui/material/InputLabel';
 
 /**
  * @uxpindocurl https://mui.com/api/select/

@@ -7,7 +7,7 @@ import React from 'react';
  */
 function Tab(props) {
     return (
-        <TabM {...props}>{props.children}</TabM>
+        <TabM {...props} style={{textTransform: 'capitalize', minWidth: 48, padding: 8, }}>{props.children}</TabM>
     )
 }
 

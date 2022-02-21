@@ -8,7 +8,7 @@ import PaperM from "@mui/material/Paper";
  */
 function Paper(props) {
     return (
-        <PaperM {...props}>{props.children}</PaperM>
+        <PaperM {...props} style={{borderRadius: 8}}>{props.children}</PaperM>
     )
 } 
 

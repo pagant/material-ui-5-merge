@@ -1,6 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import Button from '@mui/material/Button';
+import Button from '../Button/Button';
 import SnackbarM from '@mui/material/Snackbar';
 import IconButton from '../IconButton/IconButton';
 import Icon from '../Icon/Icon';

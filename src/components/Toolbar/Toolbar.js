@@ -47,7 +47,7 @@ Toolbar.propTypes = {
      */
     variant: PropTypes.oneOf(["regular", "dense"]),
 
-    justifyContent: PropTypes.oneOf(["center", "flex-end", "flex-start", "space-around", "space-between", "space-evenly", "stretch"])
+    justifyContent: PropTypes.oneOf(["none", "center", "flex-end", "flex-start", "space-around", "space-between", "space-evenly", "stretch"])
   };
   
 export default Toolbar;

@@ -1,9 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
+// import useMediaQuery from '@mui/material/useMediaQuery';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import deltaTheme from "./delta-theme-v2";
+import getDeltaTheme from "./delta-theme-v2";
 
-const theme = createTheme(deltaTheme);
+const theme = createTheme(getDeltaTheme);
 
 export default function UXPinWrapper({ children }) {
 

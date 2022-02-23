@@ -136,6 +136,8 @@ module.exports = {
           'src/components/MenuList/MenuList.js',
           'src/components/MenuItem/MenuItem.js',
           'src/components/Pagination/Pagination.js',
+          'src/components/SideNavigation/SideNavigation.js',
+          'src/components/SideNavigationAction/SideNavigationAction.js',
           'src/components/Stepper/Stepper.js',
           'src/components/Tab/Tab.js',
           'src/components/Tabs/Tabs.js',

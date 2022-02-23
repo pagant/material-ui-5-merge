@@ -6,35 +6,49 @@ const deltaTheme = {
       mode: 'light',
       common: {
         black: 'rgba(42,50,61,1)',
-        white: '#fff'
+        white: 'rgba(255,255,255,1)'
       },
       primary: {
         main: '#1565c0',
+        contrastText: 'rgba(255,255,255,1)'
       },
       secondary: {
         main: '#4c596b',
+        contrastText: 'rgba(255,255,255,1)'
       },
       text: {
         primary: 'rgba(42,50,61,0.9)',
         secondary: 'rgba(42,50,61,0.6)',
         disabled: 'rgba(42,50,61,0.4)',
-        hint: 'rgba(42,50,61,0.4)',
+        hint: 'rgba(42,50,61,0.25)',
+      },
+      whitetext: {
+        primary: 'rgba(255,255,255,1)',
+        secondary: 'rgba(255,255,255,0.70)',
+        disabled: 'rgba(255,255,255,0.50)',
+        hint: 'rgba(255,255,255,0.40)',
       },
       error: {
         main: '#bf3528',
+        contrastText: 'rgba(255,255,255,1)'
       },
       warning: {
         main: '#e69b19',
+        contrastText: 'rgba(255,255,255,1)'
       },
       info: {
         main: '#3694ff',
+        contrastText: 'rgba(255,255,255,1)'
       },
       success: {
         main: '#a4c639',
+        contrastText: 'rgba(42,50,61,0.9)',
       },
       divider: 'rgba(42,50,61,0.13)',
+      whitedivider: 'rgba(255,255,255,0.25)',
       background: {
         default: '#f4f7f9',
+        paper: '#fff',
       },
     },
     
@@ -48,6 +62,11 @@ const deltaTheme = {
     },
 
     components: {
+      MuiPaper: {
+        shape: {
+          borderRadius: 8,
+        }
+      },
       MuiTooltip: {
         defaultProps: {
           arrow: true,

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BoxM from '@mui/material/Box';
+import { sizing } from '@mui/system';
 import { styled } from '@mui/material/styles';
 
 
@@ -17,6 +18,7 @@ function Box(props) {
   return (
     <BoxM ref={uxpinRef}
       {...other}
+      style={{objectFit: props.objectFit, ...props.style}}
     >
       {!props.children ? (
         <span>
@@ -209,24 +211,32 @@ Box.propTypes = {
   textAlign: PropTypes.oneOf(["left", "center", "right"]),
   
   textOverflow: PropTypes.oneOf(["clip", "ellipsis"]),
-  /**
+
+/**
+ * Accepts any valid CSS properties.
+ */
+  style: PropTypes.object,
+
+/**
  * Accepts all system properties, as well as any valid CSS properties.
  */
   sx: PropTypes.object,
 };
+
 Box.defaultProps = {
+  style:{
+    "min-height":"",
+    "height":"",
+    "max-height":"",
+    "min-width":"",
+    "width":"",
+    "max-width":"",
+    "overflow-y":"",
+  },
   sx:{
   "padding":"",
-  "padding-top":"",
-  "padding-right":"",
-  "padding-bottom":"",
-  "padding-left":"",
   "margin":"",
-  "margin-top":"",
-  "margin-right":"",
-  "margin-bottom":"",
-  "margin-left":"",
-}
+  }
 }
 
 export default Box;

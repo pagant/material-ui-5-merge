@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import IconM from '@mui/material/Icon';
-import { iconVariants } from './icon-variants'
+import { iconVariants } from './icon-variants';
 
 let icons = document.createElement('link');
-icons.setAttribute('href', 'https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+icons.setAttribute('href', 'https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
 icons.setAttribute('rel', 'stylesheet');
 document.head.appendChild(icons);
 
@@ -40,7 +40,6 @@ Icon.propTypes = {
    */
   sx: PropTypes.object,
 }
-
 
 
 Icon.defaultProps = {

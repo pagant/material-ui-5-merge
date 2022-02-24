@@ -51,6 +51,16 @@ SideNavigationAction.propTypes = {
      * You can provide your own value. Otherwise, we fallback to the child position index.
      */
     value: PropTypes.string,
+
+    /**
+    * On hover event to use with UXPin interactions.
+    */
+     onMouseOver: PropTypes.func,
+
+    /**
+    * On click event to use with UXPin interactions.
+    */
+    onClick: PropTypes.func,
     
     /**
      * The system prop that allows defining system overrides as well as additional CSS styles. See the `sx` page for more details.

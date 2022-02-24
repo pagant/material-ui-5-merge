@@ -8,7 +8,7 @@ import PaperM from "@mui/material/Paper";
  */
 function Paper(props) {
     return (
-        <PaperM {...props} style={{borderRadius: 8}}>{props.children}</PaperM>
+        <PaperM {...props}>{props.children}</PaperM>
     )
 } 
 
@@ -44,7 +44,6 @@ Paper.propTypes = {
 
   /**
    * If `true`, rounded corners are disabled.
-   * @uxpinignoreprop
    */
   square: PropTypes.bool,
 

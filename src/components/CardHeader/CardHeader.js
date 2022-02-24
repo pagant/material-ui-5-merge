@@ -11,16 +11,16 @@ import { iconVariants } from '../Icon/icon-variants'
  * @uxpindocurl https://mui.com/api/card-header/
  */
 function CardHeader(props) {
-    return (
-        <CardHeaderM 
-          {...props} 
-          avatar={props.avatar && <Avatar color={props.color}>{props.avatar}</Avatar>}
-          action={props.action && <IconButton aria-label={props.ariaLabel} onClick={props.iconOnClick}><Icon>{props.action}</Icon></IconButton>}
-        >
-          {props.children}
-        </CardHeaderM>
-    )
-} 
+  return (
+    <CardHeaderM
+      {...props}
+      avatar={props.avatar && <Avatar color={props.color}>{props.avatar}</Avatar>}
+      action={props.action && <IconButton aria-label={props.ariaLabel} onClick={props.iconOnClick}><Icon>{props.action}</Icon></IconButton>}
+    >
+      {props.children}
+    </CardHeaderM>
+  )
+}
 
 CardHeader.propTypes = {
   /**
@@ -39,21 +39,30 @@ CardHeader.propTypes = {
    * @uxpinpropname Avatar Bg Color
    */
   color: PropTypes.oneOf([
-    'red', 
-    'pink', 
-    'purple',  
-    'indigo', 
-    'blue', 
-    'lightBlue', 
-    'cyan', 
-    'teal', 
-    'green', 
-    'lightGreen', 
-    'lime', 
-    'yellow', 
-    'orange', 
-    'brown', 
-    'grey', 
+    'primary.main', 
+    'primary.light', 
+    'primary.dark', 
+    'secondary.main', 
+    'secondary.light', 
+    'secondary.dark',
+    'error.main', 
+    'success.main', 
+    'info.main', 
+    'red',
+    'pink',
+    'purple',
+    'indigo',
+    'blue',
+    'lightBlue',
+    'cyan',
+    'teal',
+    'green',
+    'lightGreen',
+    'lime',
+    'yellow',
+    'orange',
+    'brown',
+    'grey',
   ]),
 
   /**

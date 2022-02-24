@@ -55,6 +55,12 @@ const deltaTheme = {
     typography: {
       fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif',
       fontSize: 14,
+      button: {
+        textTransform: 'capitalize',
+      },
+      subtitle1: {
+        fontWeight: 500,
+      },
     },
     
     shape: {

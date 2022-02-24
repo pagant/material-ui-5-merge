@@ -5,9 +5,9 @@ export default (
   <CardHeader
     uxpId='Card-Header-1'
     avatar="R"
-    color="grey"
-    action="add"
-    ariaLabel="add"
+    color="secondary.light"
+    action="more_vert"
+    ariaLabel="more"
     title="Design Insights"
     subheader="December 6, 2021"
   />

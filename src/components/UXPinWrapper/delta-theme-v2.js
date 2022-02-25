@@ -64,13 +64,15 @@ const deltaTheme = {
     },
     
     shape: {
-      borderRadius: 6,
+      borderRadius: 8,
     },
 
     components: {
-      MuiPaper: {
-        shape: {
-          borderRadius: 8,
+      MuiButton: {
+        styleOverrides: {
+          root: {
+            borderRadius: 6,
+          }
         }
       },
       MuiTooltip: {

@@ -53,4 +53,11 @@ Paper.propTypes = {
   sx: PropTypes.object
 };
 
+Paper.defaultProps = {
+  sx:{
+    p:'',
+    m:'',
+  }
+}
+
 export default Paper;

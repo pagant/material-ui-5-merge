@@ -31,7 +31,7 @@ Button.propTypes ={
   /**
    * The color of the button.
    */
-  color: PropTypes.oneOf(["white", "black", "inherit", "primary", "secondary", "success", "error", "info", "warning"]),
+  color: PropTypes.oneOf(["inherit", "primary", "secondary", "success", "error", "info", "warning"]),
 
   /**
    * If `true`, the button will be disabled.

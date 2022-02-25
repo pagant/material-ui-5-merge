@@ -153,4 +153,24 @@ TextField.propTypes = {
   sx: PropTypes.object
 };
 
+TextField.defaultProps = {
+
+  sx: {
+    m: '', //margin
+    mt: '', //margin-top
+    mr: '', //margin-right
+    mb: '', //margin-bottom
+    ml: '', //margin-left
+    mx: '', //margin-left, margin-right
+    my: '', //margin-top, margin-bottom
+    p: '', //padding
+    pt: '', //padding-top
+    pr: '', //padding-right
+    pb: '', //padding-bottom
+    pl: '', //padding-left
+    px: '', //padding-left, padding-right
+    py: '', //padding-top, padding-bottom
+  }
+}
+
 export default TextField;

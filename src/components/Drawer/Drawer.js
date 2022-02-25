@@ -36,24 +36,24 @@ export default function Drawer(props) {
   };
 
   return (
-    <Box style={{ minWidth: "300px", minHeight: "300px",  height: "100%" }} id="jack">
-    <DrawerM
-      // TransitionProps={uxpContainer ? { tabIndex: "null" } : null}
-      classes={{
-        scrollPaper: classes.scrollPaper
-      }}
-      open={open}
-      onClose={() => {setOpen(false)}}
-      container={document.querySelector("[id='jack']")}
-      disableEnforceFocus
-      disablePortal={true}
-      {...props}
-    >
-      <div style={{ width: props.width, minHeight:"200px"}}>
-        {props.children}
-      </div>
-    </DrawerM>
-</Box>
+    <Box style={{ minWidth: "72px", minHeight: "300px", height: "100%" }} id="jack">
+      <DrawerM
+        // TransitionProps={uxpContainer ? { tabIndex: "null" } : null}
+        classes={{
+          scrollPaper: classes.scrollPaper
+        }}
+        open={open}
+        onClose={() => { setOpen(false) }}
+        container={document.querySelector("[id='jack']")}
+        disableEnforceFocus
+        disablePortal={true}
+        {...props}
+      >
+        <div style={{ width: props.width, minHeight: "200px" }}>
+          {props.children}
+        </div>
+      </DrawerM>
+    </Box>
   )
 }
 
@@ -105,6 +105,6 @@ Drawer.propTypes = {
 
 
 Drawer.defaultProps = {
-open: false,
-onClose: () => {setOpen(false)},
+  open: false,
+  onClose: () => { setOpen(false) },
 };

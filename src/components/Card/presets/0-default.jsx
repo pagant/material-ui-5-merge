@@ -6,13 +6,14 @@ import CardContent from '../../CardContent/CardContent';
 import CardHeader from '../../CardHeader/CardHeader';
 import CardMedia from '../../CardMedia/CardMedia';
 import Button from '../../Button/Button';
+import Box from "../../Box/Box";
 import Avatar from '../../Avatar/Avatar';
 import Icon from '../../Icon/Icon';
 import IconButton from '../../IconButton/IconButton';
 import Typography from '../../Typography/Typography';
 
 export default (
-  <Card uxpId='Card-1' sx={{ maxWidth: 345 }}>
+  <Card uxpId='Card-1' sx={{ maxWidth: 345 }} elevation={4}>
     <CardHeader
       uxpId='Card-Header-1'
       avatar="R"

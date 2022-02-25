@@ -1,5 +1,6 @@
 import React from 'react';
 import Paper from '../Paper';
+import Box from "../../Box/Box";
 import Typography from '../../Typography/Typography';
 
 

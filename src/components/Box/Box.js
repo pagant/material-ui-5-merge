@@ -52,7 +52,7 @@ Box.propTypes = {
   display: PropTypes.oneOf([
     'inline',	/* Displays an element as an inline element (like <span>). Any height and width properties will have no effect */
     'block',	/* Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width	 */
-    'contents',	/* Makes the container disappear, making the child elements children of the element the next level up in the DOM	 */
+    //'contents',	/* Makes the container disappear, making the child elements children of the element the next level up in the DOM	 */
     'flex',	/* Displays an element as a block-level flex container	 */
     'grid',	/* Displays an element as a block-level grid container */
     'inline-block',	/* Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values */
@@ -60,7 +60,7 @@ Box.propTypes = {
     'inline-grid',	/* Displays an element as an inline-level grid container */
     'inline-table',	/* The element is displayed as an inline-level table */
     'list-item',	/* Let the element behave like a <li> element	 */
-    'run-in',	/* Displays an element as either block or inline, depending on context */
+    //'run-in',	/* Displays an element as either block or inline, depending on context */
     'table',	/* Let the element behave like a <table> element	 */
     'table-caption',	/* Let the element behave like a <caption> element	 */
     'table-column-group',	/* Let the element behave like a <colgroup> element	 */
@@ -116,9 +116,9 @@ Box.propTypes = {
    * Color of text
    */
 
-  color: PropTypes.oneOf(['white', 'grey.100', 'grey.200', 'grey.300', 'grey.400', 'grey.500', 'primary.main', 'primary.light', 'primary.dark', 'secondary.main', 'secondary.light', 'secondary.dark', 'error.main', 'warning.main', 'info.main', 'success.main', 'text.primary', 'text.secondary', 'text.disabled', 'whitetext.primary', 'whitetext.secondary', 'whitetext.disabled',]),
+  color: PropTypes.oneOf(['white', 'black', 'grey.100', 'grey.200', 'grey.300', 'grey.400', 'grey.500', 'primary.main', 'primary.light', 'primary.dark', 'secondary.main', 'secondary.light', 'secondary.dark', 'error.main', 'error.light', 'error.dark', 'warning.main', 'warning.light', 'warning.dark', 'info.main', 'info.light', 'info.dark', 'success.main', 'success.light', 'success.dark', 'text.primary', 'text.secondary', 'text.disabled', 'text.hint', 'whitetext.primary', 'whitetext.secondary', 'whitetext.disabled', 'divider', 'whitedivider']),
 
-  bgcolor: PropTypes.oneOf(['white', 'grey.100', 'grey.200', 'grey.300', 'grey.400', 'grey500', 'primary.main', 'primary.light', 'primary.dark', 'secondary.main', 'secondary.light', 'secondary.dark', 'error.main', 'warning.main', 'info.main', 'success.main', 'text.primary', 'text.secondary', 'text.disabled']),
+  bgcolor: PropTypes.oneOf(['white', 'black', 'grey.100', 'grey.200', 'grey.300', 'grey.400', 'grey.500', 'primary.main', 'primary.light', 'primary.dark', 'secondary.main', 'secondary.light', 'secondary.dark', 'error.main', 'error.light', 'error.dark', 'warning.main', 'warning.light', 'warning.dark', 'info.main', 'info.light', 'info.dark', 'success.main', 'success.light', 'success.dark', 'text.primary', 'text.secondary', 'text.disabled', 'text.hint', 'whitetext.primary', 'whitetext.secondary', 'whitetext.disabled', 'divider', 'whitedivider']),
 
   /**
    * All Padding.
@@ -234,8 +234,20 @@ Box.defaultProps = {
     "overflow-y": "",
   },
   sx: {
-    p: '',
-    m: '',
+    m: '', //margin
+    mt: '', //margin-top
+    mr: '', //margin-right
+    mb: '', //margin-bottom
+    ml: '', //margin-left
+    mx: '', //margin-left, margin-right
+    my: '', //margin-top, margin-bottom
+    p: '', //padding
+    pt: '', //padding-top
+    pr: '', //padding-right
+    pb: '', //padding-bottom
+    pl: '', //padding-left
+    px: '', //padding-left, padding-right
+    py: '', //padding-top, padding-bottom
   }
 }
 

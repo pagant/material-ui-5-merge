@@ -11,7 +11,6 @@ function Button(props) {
   const { uxpinRef, ...other } = props;
   return (
     <ButtonM
-      style={{textTransform: 'capitalize'}}
       {...other}
       ref={uxpinRef}
       startIcon={props.startIcon && <Icon>{props.startIcon}</Icon>}
@@ -32,7 +31,7 @@ Button.propTypes ={
   /**
    * The color of the button.
    */
-  color: PropTypes.oneOf(["inherit", "primary", "secondary", "success", "error", "info", "warning"]),
+  color: PropTypes.oneOf(["white", "black", "inherit", "primary", "secondary", "success", "error", "info", "warning"]),
 
   /**
    * If `true`, the button will be disabled.
@@ -85,6 +84,26 @@ Button.propTypes ={
    * The system prop that allows defining system overrides as well as additional CSS styles.
    */
   sx: PropTypes.object,
+}
+
+Button.defaultProps = {
+
+  sx: {
+    m: '', //margin
+    mt: '', //margin-top
+    mr: '', //margin-right
+    mb: '', //margin-bottom
+    ml: '', //margin-left
+    mx: '', //margin-left, margin-right
+    my: '', //margin-top, margin-bottom
+    p: '', //padding
+    pt: '', //padding-top
+    pr: '', //padding-right
+    pb: '', //padding-bottom
+    pl: '', //padding-left
+    px: '', //padding-left, padding-right
+    py: '', //padding-top, padding-bottom
+  }
 }
 
 export default Button;

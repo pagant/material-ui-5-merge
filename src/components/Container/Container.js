@@ -61,3 +61,10 @@ Container.propTypes = {
   sx: PropTypes.object,
 
 }
+
+Container.defaultProps = {
+  sx: {
+    m: 0, //margin
+    p: 0, //padding
+  }
+}

@@ -234,8 +234,7 @@ Box.defaultProps = {
     "overflow-y": "",
   },
   sx: {
-    m: '0', //margin
-    p: '0', //padding
+    p: 2,
   }
 }
 

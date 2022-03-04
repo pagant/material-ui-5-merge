@@ -12,6 +12,7 @@ jobs:
           command: npm install
       - run:
           name: 'Push to UXPin'
-          command: ./node_modules/.bin/uxpin-merge push --webpack-config ./uxpin.webpack.config.js --wrapper ./src/components/UXPinWrapper/UXPinWrapper.js --token UXPIN_AUTH_TOKEN
+          command: ./node_modules/.bin/uxpin-merge push --webpack-config ./uxpin.webpack.config.js --wrapper ./src/components/UXPinWrapper/UXPinWrapper.js
+
 
           # ./node_modules/.bin/uxpin-merge push --webpack-config WEBPACK --wrapper WRAPPER --token TOKEN

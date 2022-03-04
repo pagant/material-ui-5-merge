@@ -55,8 +55,7 @@ Paper.propTypes = {
 
 Paper.defaultProps = {
   sx:{
-    p:'',
-    m:'',
+    p: 2,
   }
 }
 
